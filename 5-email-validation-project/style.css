@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(145deg, rgb(90, 179, 209), rgb(105, 105, 201));
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 1.5rem;
+    background-color: aliceblue;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px #fff;
+    max-width: 400px;
+    width: auto;
+}
+
+
+.emailBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+#email{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#email:focus{
+        outline: 2px solid rgb(170, 197, 221);
+}
+
+#error-msg{
+    color: red;
+    display:none;
+}
